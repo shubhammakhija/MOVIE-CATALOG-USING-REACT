@@ -3,11 +3,13 @@ function MovieCard({movie}){
         alert("clicked")
     }
 
+    const posterUrl = `https://image.tmdb.org/t/p/w500${movie.poster_path}`;
+
     return(
         <>
         <div className="movie-card">
             <div className="movie-poster">
-                <img src={movie.url} alt={movie.title} />
+                <img src={posterUrl} alt={movie.title} />
                 <div className="movie-overlay">
                     <button className="favourite-btn" onClick={OnFavourite}>♥</button>
                 </div>

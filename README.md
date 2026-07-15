@@ -1,19 +1,17 @@
 # 🎬 Movie Catalog Using React
 
-[![Live Demo](https://img.shields.io/badge/demo-online-brightgreen.svg)](https://movie-catalog-using-react.vercel.app/)
-[![React](https://img.shields.io/badge/React-18.2.0-61DAFB?logo=react&logoColor=black)](https://react.dev/)
-[![Vite](https://img.shields.io/badge/Vite-6.0.3-646CFF?logo=vite&logoColor=white)](https://vite.dev/)
-[![React Router](https://img.shields.io/badge/React_Router-7.3.0-CA4245?logo=react-router&logoColor=white)](https://reactrouter.com/)
-[![TMDB API](https://img.shields.io/badge/TMDB-API-01B4E4?logo=themoviedb&logoColor=white)](https://developer.themoviedb.org/)
-
 A responsive, lightning-fast web application built with **React 18**, **Vite**, and **React Router v7** that allows users to explore popular movies, search the global catalog in real-time, and curate a personalized list of favorite movies that persists across sessions.
+
+## 🚀 Live Demo
+
+**Experience the app live on Vercel:** 🔗 **[https://movie-catalog-using-react.vercel.app/](https://movie-catalog-using-react.vercel.app/)**
 
 ---
 
 ## ✨ Features
 
 * **🔥 Discover Popular Movies:** Automatically fetches and displays trending and popular movies from The Movie Database (TMDB) API upon landing.
-* **🔍 Instant Title Search:** Search for any movie by title with built-in loading states and error handling for seamless user UX.
+* **🔍 Instant Title Search:** Search for any movie by title with built-in loading states and error handling for a seamless user experience.
 * **❤️ Persistent Favorites System:** Add or remove movies from your favorites with a single click. State is managed globally via React Context (`MovieContext`) and synced to browser `localStorage` so your favorites are saved even after closing the tab.
 * **📱 Responsive Grid Layout:** Styled with modern CSS Grid and Flexbox, featuring smooth hover animations, dark-mode styling, and interactive poster overlays.
 * **⚡ Client-Side Routing:** Fast, reload-free navigation between the **Home** feed and **Favorites** collection using React Router.
@@ -28,6 +26,7 @@ A responsive, lightning-fast web application built with **React 18**, **Vite**, 
 * **State Management:** React Context API (`useContext`, `useState`, `useEffect`)
 * **Styling:** Custom CSS3 (Variables, Grid, Flexbox, Animations)
 * **Data Source:** [TMDB REST API v3](https://developer.themoviedb.org/reference/intro/getting-started)
+* **Deployment:** [Vercel](https://vercel.com/)
 
 ---
 

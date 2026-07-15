@@ -3,27 +3,33 @@
     border-radius: 8px;
     overflow: hidden;
     background-color: #1a1a1a;
-    transition: transform 0.2s;
+    transition: transform 0.2s, box-shadow 0.2s;
     height: 100%;
+    width: 100%;
+    min-width: 0; /* CRITICAL: Prevents grid item overflow causing overlap */
     display: flex;
     flex-direction: column;
-  }
-  
-  .movie-card:hover {
+}
+
+.movie-card:hover {
     transform: translateY(-5px);
-  }
-  
-  .movie-poster {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    z-index: 10; /* Keeps the hovered card cleanly above adjacent cards */
+}
+
+.movie-poster {
     position: relative;
-    aspect-ratio: 2/3;
+    aspect-ratio: 2 / 3;
     width: 100%;
-  }
-  
-  .movie-poster img {
+    overflow: hidden; /* Prevents image zoom or sizing from spilling out */
+}
+
+.movie-poster img {
+    display: block;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-  }
+    object-fit: cover; /* Keeps movie posters perfectly proportional without distortion */
+}
   
   .movie-overlay {
     position: absolute;

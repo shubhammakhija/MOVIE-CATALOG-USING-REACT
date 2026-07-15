@@ -53,13 +53,3 @@
     }
   }
   
-  .movies-grid {
-    display: grid;
-    /* Use 220px to 250px so cards fit comfortably on all screen sizes without squishing */
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 1.5rem;
-    padding: 1rem;
-    width: 100%;
-    box-sizing: border-box;
-    align-items: stretch; /* Ensures all cards in a row stay the same height */
-}

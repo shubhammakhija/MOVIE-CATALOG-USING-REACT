@@ -5,4 +5,14 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-  }
+}
+
+.movies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: stretch; 
+}
